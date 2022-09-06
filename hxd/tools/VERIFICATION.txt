@@ -1,0 +1,12 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded `tools/HxDSetup_x32.zip` file can be verified by comparing its checksum 
+against the checksum provided on the vendor's page [1] or by redownloading from there [2].
+
+Note that this verification can only be done if the package's version is still the latest version.
+The vendor does not serve older binaries or olderr hashes on his website.
+
+[1]: https://mh-nexus.de/updates/HxDCurrentVersion.json
+[2]: https://mh-nexus.de/en/downloads.php?product=HxD20
