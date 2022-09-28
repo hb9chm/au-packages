@@ -4,12 +4,12 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName            = 'libreoffice-sdk-still'
-  version                = '7.3.5'
+  version                = '7.3.6'
   fileType               = 'msi'
-  file                   =  Join-Path $toolsDir 'LibreOffice_7.3.5_Win_x86_sdk.msi'
-  file64                 =  Join-Path $toolsDir 'LibreOffice_7.3.5_Win_x64_sdk.msi'
-  checksum               = 'A3690A80067C98601DD6809F69BB9586DB889A6176497CA3E030F43A272F276B'
-  checksum64             = '3DF0BC2BA17FB897BB91FA8213BD04BEEDFE5CB1F71D10FDBED98463514D2C26'
+  file                   =  Join-Path $toolsDir 'LibreOffice_7.3.6_Win_x86_sdk.msi'
+  file64                 =  Join-Path $toolsDir 'LibreOffice_7.3.6_Win_x64_sdk.msi'
+  checksum               = '6874B9F7B3A8B4D09850FCCD6DF85DE604513DB39BC206BC8A7C38A52C2BED94'
+  checksum64             = '22D4AB0B33E18064D2CE08CA47BF38B795EB615939166714E0F04BACCC8946A6'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
   silentArgs             = '/qn /passive /norestart /l*v "{0}"' -f "$($env:TEMP)\$($env:ChocolateyPackageName).$($env:ChocolateyPackageVersion).MsiInstall.log"

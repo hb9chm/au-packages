@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>webview2-runtime.install</id>
-    <version>105.0.1343.27</version>
+    <version>105.0.1343.53</version>
     <title>WebView2 Runtime (Install)</title>
     <authors>Microsoft</authors>
     <owners>pauby</owners>
