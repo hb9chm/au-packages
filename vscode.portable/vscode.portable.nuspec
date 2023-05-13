@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>vscode.portable</id>
+    <version>1.78.2</version>
+    <title>Visual Studio Code (Portable)</title>
+    <authors>Microsoft</authors>
+    <owners>hb9chm, based on Echizen Ryoma</owners>
+    <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
+    <projectUrl>https://code.visualstudio.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/chocolatey/chocolatey-coreteampackages/master/icons/vscode.png</iconUrl>
+    <description>Visual Studio Code (Portable)</description>
+    <summary>Visual Studio Code</summary>
+    <releaseNotes>https://code.visualstudio.com/Updates</releaseNotes>
+    <tags>microsoft visualstudiocode vscode editor ide javascript typescript foss cross-platform</tags>
+    <projectSourceUrl>https://github.com/Microsoft/vscode</projectSourceUrl>
+    <packageSourceUrl>https://github.com/echizenryoma/Chocolatey-Package/tree/master/vscode.portable</packageSourceUrl>
+    <docsUrl>https://code.visualstudio.com/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
