@@ -93,7 +93,7 @@ function BuildLibOReleasesToBuildsMapping($builds) {
     [void][version]::TryParse($build, [ref]$buildVersion)
     $releaseId = "$($buildVersion.Major).$($buildVersion.Minor).$($buildVersion.Build)"
 
-    if ($releaseId -ne $previousReleaseId -and $previousReleaseId -ne $null) {
+    if ($releaseId -ne $previousReleaseId -and $null -ne $previousReleaseId) {
       $mapping.add($previousReleaseId, $previousBuildId)
     }
 
@@ -110,6 +110,7 @@ function GetFilename($url, $releasesMapping, $release, $arch) {
     "LibreOffice_[VERSION]_Win_[ARCH]_sdk.msi"
   )
   $filename64bitsPatterns = @(
+    "x86-64",
     "x86_64",
     "x64"
   )
