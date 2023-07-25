@@ -4,8 +4,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE' #only one of these: exe, msi, msu
-  file          = Join-Path $toolsDir 'microsoftedgestandaloneinstallerx86_95b6e25c591f8ccf9aa20fc0877962dfbc906c3a.exe'
-  file64        = Join-Path $toolsDir 'microsoftedgestandaloneinstallerx64_d8024429abb0b9368551e07081c11b2722aefa80.exe'
+  file          = Join-Path $toolsDir 'microsoftedgestandaloneinstallerx86_b76527bea95a9a774a382cf1980397e17f4afa82.exe'
+  file64        = Join-Path $toolsDir 'microsoftedgestandaloneinstallerx64_83324cb7595e16735415a41cae6ed0d1b9a4888c.exe'
   silentArgs    = '/silent /install'
   validExitCodes= @(0)
 }
