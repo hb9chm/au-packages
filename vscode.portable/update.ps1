@@ -20,8 +20,8 @@ function global:au_BeforeUpdate {
   
 
 function global:au_GetLatest {
-    $url32 = 'https://update.code.visualstudio.com/api/update/win32-archive/stable/VERSION'
-    $url64 = 'https://update.code.visualstudio.com/api/update/win32-x64-archive/stable/VERSION'
+    $url32 = 'https://update.code.visualstudio.com/api/update/win32-archive/stable/latest'
+    $url64 = 'https://update.code.visualstudio.com/api/update/win32-x64-archive/stable/latest'
 
     $json32 = Invoke-WebRequest -UseBasicParsing -Uri $url32 | ConvertFrom-Json
     $json64 = Invoke-WebRequest -UseBasicParsing -Uri $url64 | ConvertFrom-Json

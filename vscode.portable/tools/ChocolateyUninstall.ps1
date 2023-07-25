@@ -1,5 +1,7 @@
-$PackageName = 'vscode'
-$InstallationPath = Join-Path $(Get-ToolsLocation) $PackageName
+$PackageName = 'vscode.portable'
+$PackageDir = 'vscode'
+
+$InstallationPath = Join-Path $(Get-ToolsLocation) $PackageDir
 
 Remove-Item $InstallationPath -Recurse -Force -ErrorAction Ignore
 Uninstall-BinFile -Name 'Code'
